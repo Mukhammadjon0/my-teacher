@@ -1,0 +1,681 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none !important;
+  text-decoration: none !important;
+  box-sizing: border-box;
+}
+
+img,
+svg {
+  max-width: 90%;
+  object-fit: cover;
+  height: auto;
+}
+
+body {
+  background: #f5f5f5 !important;
+}
+
+/* universal code */
+button {
+  position: relative;
+  background: #ff5219;
+  padding: 23px 35px;
+  border: none;
+  border-radius: 10px;
+}
+
+button span {
+  position: relative;
+  z-index: 111;
+}
+
+button::before {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  content: "";
+  background: #000;
+  width: 40px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+/*  */
+.container {
+  max-width: 1170px !important;
+  margin: auto !important;
+}
+
+.topMenu {
+  padding: 20px 0px;
+  background: #202020;
+}
+
+.topMenu ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.topMenu ul li a img {
+  margin-right: 20px;
+}
+
+header {
+  width: 100%;
+  background: url("./assetest/Svg/Header_bg.svg") no-repeat top / cover;
+}
+
+header nav {
+  margin-bottom: 120px;
+}
+
+header .left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .left button {
+  position: relative;
+  padding: 20px 16px;
+  background: #ff5219;
+  border-radius: 10px;
+  border: none;
+}
+
+header .left button::before {
+  height: 45px;
+}
+
+header .left ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+header .left ul li {
+  margin-right: 20px;
+}
+
+header .headerTitle p {
+  margin-bottom: 35px;
+}
+
+header .headerTitle h1 {
+  margin-bottom: 35px;
+}
+
+header .headerTitle button {
+  padding: 22px 35px;
+  margin: 0;
+  background: #ff5219;
+  border-radius: 10px;
+  border: none;
+  margin: 0px 15px;
+}
+
+header .headerTitle button::before {
+  top: 10px;
+  right: 15px;
+  height: 48px;
+}
+
+header .headerTitle button:last-of-type {
+  background: #000;
+}
+
+header .headerTitle button:last-of-type::before {
+  background: #ff5219;
+}
+
+.headerTitle {
+  padding-bottom: 280px;
+}
+
+section.cours {
+  text-align: center;
+  margin-bottom: 120px;
+}
+
+section.cours .ref p {
+  margin-bottom: 30px;
+}
+
+section.cours .ref h1 {
+  margin-bottom: 34px;
+}
+
+section.cours .box {
+  padding: 30px;
+  border: 1px solid #acacac;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+section.cours .red .box {
+  background: rgba(255, 82, 25, 1);
+}
+
+section.farq {
+  width: 100%;
+  background: #f3f4f8;
+  padding-top: 40px;
+  position: relative;
+}
+
+section.farq p {
+  margin-bottom: 34px;
+}
+
+section.farq h1 {
+  margin-bottom: 40px;
+}
+
+section.farq ul {
+  padding: 0;
+  margin: 0;
+}
+
+section.farq ul li {
+  display: flex;
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+section.farq ul li img:first-of-type {
+  margin-right: 20px;
+}
+
+section.farq button {
+  padding: 23px 25px;
+  background: #ff5219;
+  border-radius: 10px;
+  border: none;
+}
+
+section.farq .firma {
+  margin-top: 100px;
+  background: url("./assetest/Svg/Partners.svg") no-repeat center / cover;
+  padding-top: 35px;
+  padding: 34px 135px 10px;
+  margin-bottom: -50px;
+}
+
+section.farq .firma ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section.kurslar {
+  width: 100%;
+  margin-top: 195px;
+  margin-bottom: 120px;
+}
+
+section.kurslar .wer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 42px;
+}
+
+section.kurslar .wer .right p {
+  margin-bottom: 45px;
+}
+
+section.kurslar .wer button {
+  border-radius: 10px;
+}
+
+section.kurslar .Card .CardTop {
+  padding-top: 204px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  background: url("./assetest/Svg/black.svg") no-repeat center;
+}
+
+section.kurslar .Card .CardTop button {
+  padding: 7px 15px;
+  background: #ff5219;
+  border: none;
+  border-radius: 5px;
+}
+
+section.kurslar .Card .CardTop button:last-of-type {
+  background: #0060ff;
+  margin-left: 20px;
+}
+
+section.kurslar .Card .CardTop button::before {
+  display: none;
+}
+
+section.kurslar .Card .CardBottom {
+  padding: 30px 15px;
+  background: #ffff;
+  margin-bottom: 30px;
+  border-radius: 0px 0px 10px 10px;
+  margin-top: -10px;
+}
+
+section.kurslar .Card .CardBottom h2 {
+  margin-bottom: 33px;
+}
+
+section.kurslar .Card .CardBottom ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section.kurslar .Card .CardBottom ul:first-of-type li:first-of-type::before {
+  content: "";
+  width: 45px;
+  height: 45px;
+  display: block;
+  border-radius: 50%;
+  background: #000;
+  margin-right: 10px;
+}
+
+section.kurslar .Card .CardBottom ul:first-of-type li:first-of-type {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section.kurslar .Card .CardBottom ul:first-of-type {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 15px;
+  padding-bottom: 30px;
+}
+
+section.kurslar .Card .CardBottom ul li span {
+  margin-right: 10px;
+}
+
+section.raes {
+  width: 100%;
+  padding: 120px 0px;
+  background: #f3f4f8;
+}
+
+section.raes p {
+  margin-bottom: 37px;
+}
+
+section.raes h1 {
+  margin-bottom: 45px;
+}
+
+section.raes .CardTeacher {
+  background: #ffff;
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main.raes .CardTeacher .left {
+  border-right: 1px solid #ccc;
+}
+
+main.raes .CardTeacher .right .lop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section.raes .CardTeacher .right .lop p {
+  padding: 0;
+  margin: 0;
+}
+
+section.raes .CardTeacher .right .lop p:last-of-type {
+  padding-left: 15px;
+  border-left: 1px solid #ccc;
+}
+
+section.raes .CardTeacher .right h1 {
+  margin: 0;
+  padding: 0;
+}
+
+section.raes .CardTeacher .right {
+  margin-left: 15px;
+}
+
+section.narx .container {
+  max-width: 1560px !important;
+  margin: auto;
+}
+
+section.narx {
+  margin-bottom: 135px;
+}
+
+section.narx .col-12 {
+  text-align: center;
+}
+
+section.narx .col-12 p {
+  margin-bottom: 30px;
+}
+
+section.narx .klass {
+  padding: 40px;
+  margin-top: 35px;
+  border-radius: 10px;
+  background: #fff;
+}
+
+section.narx .klass h3 {
+  margin-bottom: 20px;
+}
+
+section.narx .klass p {
+  margin-bottom: 21px;
+}
+
+section.narx .klass h1 {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 35px;
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+section.narx .klass ul {
+  padding: 0;
+  margin: 0;
+}
+
+main.narx .klass ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+main.narx .klass ul li img:first-of-type {
+  margin-right: 15px;
+}
+
+main.narx .klass button {
+  border-radius: 10px;
+}
+
+section.serves {
+  width: 100%;
+  background: url("./assetest/Svg/bgbg.svg") no-repeat center / cover;
+  padding: 120px 0px;
+  margin-bottom: 120px;
+}
+
+main.serves p {
+  margin-bottom: 25px;
+}
+
+main.serves h1 {
+  margin-bottom: 45px;
+}
+
+section.serves .adress {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 50px;
+}
+
+section.serves .adress .left h2 {
+  margin-bottom: 10px;
+}
+
+section.serves .adress .left p {
+  margin: 0;
+  padding: 0;
+}
+
+section.team {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 121px;
+}
+
+section.team p {
+  margin-bottom: 28px;
+}
+
+section.team h1 {
+  margin-bottom: 37px;
+}
+
+section.team .name {
+  border-radius: 10px;
+  background: #fff;
+  padding: 20px;
+}
+
+section.team .name,
+section.team .names {
+  margin-bottom: 40px;
+}
+
+section.team .names:hover {
+  border-radius: 10px;
+  background: #fff;
+  padding: 20px;
+}
+
+section.team .name h1,
+section.team .names h1 {
+  margin-top: 25px;
+  margin-bottom: 13px;
+}
+
+section.team .name p,
+section.team .names p {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+section.fikr {
+  width: 100%;
+  background: #f3f4f8;
+  padding: 135px 0px;
+}
+
+section.fikr p {
+  margin-bottom: 30px;
+}
+
+section.fikr h1 {
+  margin-bottom: 44px;
+}
+
+section.fikr .boxRose {
+  padding: 40px;
+  background: #fff;
+}
+
+section.fikr .boxRose .boxRoseBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section.fikr .boxRose .boxRoseBottom .right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section.blog {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 235px;
+}
+
+section.blog p {
+  margin-bottom: 30px;
+}
+
+section.blog h1 {
+  margin-bottom: 35px;
+}
+
+section.blog .non {
+  padding: 20px 30px;
+  background: #fff;
+  border-radius: 0px 0px 10px 10px;
+}
+
+section.blog .non h3 {
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+section.blog .non .nonBottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+section.blog .non .nonBottom ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+section.blog .non .nonBottom ul li:first-of-type {
+  margin-right: 10px;
+}
+
+.Maroqli {
+  position: relative;
+  bottom: -350px;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: url("./assetest/Svg/Bg1.svg") no-repeat bottom;
+}
+
+/* footer  */
+footer {
+  width: 100%;
+  padding-top: 234px;
+  background-color: rgba(32, 32, 32, 1);
+}
+
+footer ul li {
+  padding-bottom: 8px;
+}
+
+footer ul {
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li a {
+  color: #d1d9fe;
+}
+
+footer ul li .f {
+  font-size: 25px;
+  color: #fff;
+}
+
+footer .icon .icon1 {
+  padding: 13px 18px;
+}
+
+footer h1 {
+  color: white;
+  font-size: 25px;
+}
+
+footer .row .col-4 ul {
+  margin-top: 36px;
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 991px) {
+  header nav .left {
+    flex-direction: column;
+  }
+
+  header {
+    background: transparent;
+  }
+
+  header nav .left ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header nav .left ul li {
+    width: 100%;
+    margin: 0;
+    padding: 20px 20px;
+    border-radius: 5px;
+    margin: 5px 0px;
+    background: #ff5219;
+  }
+  section.serves {
+    background: black;
+  }
+}
+
+@media (max-width: 575px) {
+  .topMenu {
+    justify-content: center;
+    text-align: center;
+  }
+
+  button {
+    width: 100%;
+    margin: 0 !important;
+    margin-bottom: 5px !important;
+  }
+
+  button::before {
+    display: none;
+  }
+
+  .headerTitle {
+    padding: 0 !important;
+  }
+  section.farq .firma {
+    display: none;
+  }
+  section.kurslar .wer {
+    flex-direction: column;
+  }
+  section.kurslar .Card .CardTop {
+    padding-left: 0;
+    padding-bottom: 0;
+  }
+  section.serves {
+    background: black;
+  }
+}
